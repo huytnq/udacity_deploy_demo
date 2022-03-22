@@ -15,7 +15,7 @@ class Config(object):
         'SQL_SERVER') or 'huytnqsever.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'Huytnq_db'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'huytnq'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Admin@123'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Admin@123456789'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + \
         SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + \
